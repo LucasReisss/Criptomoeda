@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974709EFEA9711E01FD888FC /* Pods_Criptomoeda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C41C2C8905CDE8DEB58D10 /* Pods_Criptomoeda.framework */; };
 		A06E1A9D2766737100A7B2AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E1A9C2766737100A7B2AB /* AppDelegate.swift */; };
 		A06E1A9F2766737100A7B2AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E1A9E2766737100A7B2AB /* SceneDelegate.swift */; };
 		A06E1AA12766737100A7B2AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E1AA02766737100A7B2AB /* ViewController.swift */; };
 		A06E1AA42766737100A7B2AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E1AA22766737100A7B2AB /* Main.storyboard */; };
 		A06E1AA62766737400A7B2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06E1AA52766737400A7B2AB /* Assets.xcassets */; };
 		A06E1AA92766737400A7B2AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06E1AA72766737400A7B2AB /* LaunchScreen.storyboard */; };
+		A06E1AB1276674D900A7B2AB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E1AB0276674D900A7B2AB /* Service.swift */; };
+		A06E1AB327668C8400A7B2AB /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E1AB227668C8400A7B2AB /* Crypto.swift */; };
+		A099920D2767831C00D865F4 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099920C2767831C00D865F4 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4759E3C7577D25FBDC51D74A /* Pods-Criptomoeda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Criptomoeda.release.xcconfig"; path = "Target Support Files/Pods-Criptomoeda/Pods-Criptomoeda.release.xcconfig"; sourceTree = "<group>"; };
 		A06E1A992766737100A7B2AB /* Criptomoeda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Criptomoeda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06E1A9C2766737100A7B2AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06E1A9E2766737100A7B2AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		A06E1AA52766737400A7B2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06E1AA82766737400A7B2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06E1AAA2766737400A7B2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06E1AB0276674D900A7B2AB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A06E1AB227668C8400A7B2AB /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		A099920C2767831C00D865F4 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		DD010FDDAE884A0200CBD351 /* Pods-Criptomoeda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Criptomoeda.debug.xcconfig"; path = "Target Support Files/Pods-Criptomoeda/Pods-Criptomoeda.debug.xcconfig"; sourceTree = "<group>"; };
+		F0C41C2C8905CDE8DEB58D10 /* Pods_Criptomoeda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Criptomoeda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974709EFEA9711E01FD888FC /* Pods_Criptomoeda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED45C3F63C472FC46AEABE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0C41C2C8905CDE8DEB58D10 /* Pods_Criptomoeda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85762A8D1B9F3733834A72C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD010FDDAE884A0200CBD351 /* Pods-Criptomoeda.debug.xcconfig */,
+				4759E3C7577D25FBDC51D74A /* Pods-Criptomoeda.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A06E1A902766737100A7B2AB = {
 			isa = PBXGroup;
 			children = (
 				A06E1A9B2766737100A7B2AB /* Criptomoeda */,
 				A06E1A9A2766737100A7B2AB /* Products */,
+				85762A8D1B9F3733834A72C0 /* Pods */,
+				0ED45C3F63C472FC46AEABE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +89,13 @@
 				A06E1A9C2766737100A7B2AB /* AppDelegate.swift */,
 				A06E1A9E2766737100A7B2AB /* SceneDelegate.swift */,
 				A06E1AA02766737100A7B2AB /* ViewController.swift */,
+				A06E1AB227668C8400A7B2AB /* Crypto.swift */,
 				A06E1AA22766737100A7B2AB /* Main.storyboard */,
 				A06E1AA52766737400A7B2AB /* Assets.xcassets */,
 				A06E1AA72766737400A7B2AB /* LaunchScreen.storyboard */,
 				A06E1AAA2766737400A7B2AB /* Info.plist */,
+				A06E1AB0276674D900A7B2AB /* Service.swift */,
+				A099920C2767831C00D865F4 /* CryptoTableViewCell.swift */,
 			);
 			path = Criptomoeda;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06E1AAD2766737400A7B2AB /* Build configuration list for PBXNativeTarget "Criptomoeda" */;
 			buildPhases = (
+				94054A797C26D57C1C29A9DF /* [CP] Check Pods Manifest.lock */,
 				A06E1A952766737100A7B2AB /* Sources */,
 				A06E1A962766737100A7B2AB /* Frameworks */,
 				A06E1A972766737100A7B2AB /* Resources */,
+				FA8A567407B73C279B730FC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94054A797C26D57C1C29A9DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Criptomoeda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA8A567407B73C279B730FC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Criptomoeda/Pods-Criptomoeda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Criptomoeda/Pods-Criptomoeda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Criptomoeda/Pods-Criptomoeda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A06E1A952766737100A7B2AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A06E1AA12766737100A7B2AB /* ViewController.swift in Sources */,
+				A06E1AB1276674D900A7B2AB /* Service.swift in Sources */,
+				A099920D2767831C00D865F4 /* CryptoTableViewCell.swift in Sources */,
+				A06E1AB327668C8400A7B2AB /* Crypto.swift in Sources */,
 				A06E1A9D2766737100A7B2AB /* AppDelegate.swift in Sources */,
 				A06E1A9F2766737100A7B2AB /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +364,7 @@
 		};
 		A06E1AAE2766737400A7B2AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD010FDDAE884A0200CBD351 /* Pods-Criptomoeda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +394,7 @@
 		};
 		A06E1AAF2766737400A7B2AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4759E3C7577D25FBDC51D74A /* Pods-Criptomoeda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +406,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

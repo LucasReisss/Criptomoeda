@@ -1,24 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIm-b6-PIr">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="vjN-ea-szE">
+            <objects>
+                <viewController id="wIm-b6-PIr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jhM-vB-77S">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="764" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-fx-UCh">
+                                <rect key="frame" x="16" y="511.00000000000006" width="358" height="35.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Entrar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <color key="baseBackgroundColor" red="0.14901960784313725" green="0.043137254901960784" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tFO-2S-4Ip" kind="presentation" modalPresentationStyle="fullScreen" id="t3U-lx-nFd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-pi-Z5q">
+                                <rect key="frame" x="16" y="175" width="358" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="9zU-bW-8TY"/>
+                                    <constraint firstAttribute="height" constant="179" id="s6y-SW-gA4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem-Vindo ao Crypto List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyQ-7G-xHX">
+                                <rect key="frame" x="52" y="362" width="286.33333333333331" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xri-Lu-0DY"/>
+                        <color key="backgroundColor" red="0.65098039215686276" green="0.38823529411764707" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.14901960780000001" green="0.043137254899999998" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yJY-pi-Z5q" firstAttribute="top" secondItem="xri-Lu-0DY" secondAttribute="top" constant="131" id="0g7-gg-lB2"/>
+                            <constraint firstItem="yJY-pi-Z5q" firstAttribute="leading" secondItem="xri-Lu-0DY" secondAttribute="leading" constant="16" id="2r6-dr-sfu"/>
+                            <constraint firstItem="VyQ-7G-xHX" firstAttribute="top" secondItem="yJY-pi-Z5q" secondAttribute="bottom" constant="8" symbolic="YES" id="6hi-Pi-fqo"/>
+                            <constraint firstItem="yJY-pi-Z5q" firstAttribute="leading" secondItem="xri-Lu-0DY" secondAttribute="leading" constant="16" id="8Vy-Jv-8a6"/>
+                            <constraint firstItem="xri-Lu-0DY" firstAttribute="trailing" secondItem="yJY-pi-Z5q" secondAttribute="trailing" constant="16" id="H1c-xN-mab"/>
+                            <constraint firstItem="VyQ-7G-xHX" firstAttribute="top" secondItem="yJY-pi-Z5q" secondAttribute="bottom" constant="8" symbolic="YES" id="ILm-qW-Ppr"/>
+                            <constraint firstItem="xri-Lu-0DY" firstAttribute="trailing" secondItem="yJY-pi-Z5q" secondAttribute="trailing" constant="16" id="Psl-rX-Z9l"/>
+                            <constraint firstItem="hIg-fx-UCh" firstAttribute="firstBaseline" secondItem="VyQ-7G-xHX" secondAttribute="baseline" constant="150" id="Qm8-xn-rib"/>
+                            <constraint firstItem="VyQ-7G-xHX" firstAttribute="centerX" secondItem="xri-Lu-0DY" secondAttribute="centerX" id="TUD-cN-an4"/>
+                            <constraint firstItem="xri-Lu-0DY" firstAttribute="trailing" secondItem="hIg-fx-UCh" secondAttribute="trailing" constant="16" id="VHY-0x-ue3"/>
+                            <constraint firstItem="hIg-fx-UCh" firstAttribute="leading" secondItem="xri-Lu-0DY" secondAttribute="leading" constant="16" id="s7n-SB-muh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcL-3A-vQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650.76923076923072" y="16.350710900473931"/>
+        </scene>
+        <!--Criptomoedas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Criptomoeda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tLS-I1-isK">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.94901960780000005" green="0.81568627449999997" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cryptocell" rowHeight="68" id="pYC-1j-SXX" customClass="CryptoTableViewCell" customModule="Criptomoeda" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="31.666666030883789" width="390" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pYC-1j-SXX" id="yV1-gp-sSv">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ez3-md-Mhs">
+                                                    <rect key="frame" x="20.000000000000004" y="12" width="44.333333333333343" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asq-P5-thw">
+                                                    <rect key="frame" x="326.66666666666669" y="12" width="43.333333333333314" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" red="0.2784313725" green="0.75200348289999996" blue="0.34023490579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWK-3R-Eb8">
+                                                    <rect key="frame" x="20" y="42" width="31" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPS-TP-vMw">
+                                                    <rect key="frame" x="339" y="41" width="31" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="asq-P5-thw" firstAttribute="top" secondItem="yV1-gp-sSv" secondAttribute="top" constant="12" id="0dp-jR-019"/>
+                                                <constraint firstItem="wWK-3R-Eb8" firstAttribute="top" secondItem="ez3-md-Mhs" secondAttribute="bottom" constant="9" id="FAR-2i-S7s"/>
+                                                <constraint firstItem="ez3-md-Mhs" firstAttribute="top" secondItem="yV1-gp-sSv" secondAttribute="top" constant="12" id="GRg-M3-nkS"/>
+                                                <constraint firstAttribute="trailing" secondItem="iPS-TP-vMw" secondAttribute="trailing" constant="20" symbolic="YES" id="H2N-aE-psY"/>
+                                                <constraint firstAttribute="bottom" secondItem="wWK-3R-Eb8" secondAttribute="bottom" constant="12" id="Lub-5D-n8q"/>
+                                                <constraint firstItem="iPS-TP-vMw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wWK-3R-Eb8" secondAttribute="trailing" constant="8" symbolic="YES" id="Rjg-7G-f1o"/>
+                                                <constraint firstAttribute="trailing" secondItem="asq-P5-thw" secondAttribute="trailing" constant="20" symbolic="YES" id="Ud7-oL-imV"/>
+                                                <constraint firstAttribute="bottom" secondItem="iPS-TP-vMw" secondAttribute="bottom" constant="12" id="c1e-DQ-ooo"/>
+                                                <constraint firstItem="wWK-3R-Eb8" firstAttribute="leading" secondItem="yV1-gp-sSv" secondAttribute="leading" constant="20" symbolic="YES" id="ja9-2f-2DY"/>
+                                                <constraint firstItem="ez3-md-Mhs" firstAttribute="leading" secondItem="yV1-gp-sSv" secondAttribute="leading" constant="20" symbolic="YES" id="lZ8-YJ-Y7c"/>
+                                                <constraint firstItem="iPS-TP-vMw" firstAttribute="top" secondItem="asq-P5-thw" secondAttribute="bottom" constant="9" id="yXZ-wa-654"/>
+                                                <constraint firstItem="asq-P5-thw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ez3-md-Mhs" secondAttribute="trailing" constant="8" symbolic="YES" id="ycf-Ki-ckW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="assedIdLabel" destination="wWK-3R-Eb8" id="Ssg-wG-dd7"/>
+                                            <outlet property="nameLabel" destination="ez3-md-Mhs" id="ZF5-aG-sED"/>
+                                            <outlet property="priceRealLabel" destination="iPS-TP-vMw" id="lch-cI-aFl"/>
+                                            <outlet property="priceUsdLabel" destination="asq-P5-thw" id="7KA-Cu-Cev"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tLS-I1-isK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0ty-hh-uek"/>
+                            <constraint firstAttribute="bottom" secondItem="tLS-I1-isK" secondAttribute="bottom" id="fHw-Kq-kgj"/>
+                            <constraint firstItem="tLS-I1-isK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uKb-qr-GIU"/>
+                            <constraint firstItem="tLS-I1-isK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z5c-Oe-HBN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Criptomoedas" id="Jub-HP-9If">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" style="plain" id="XQP-g9-8bN">
+                            <connections>
+                                <segue destination="wg2-VN-EEU" kind="show" id="PVn-DD-FWn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblCryptocurrencies" destination="tLS-I1-isK" id="IBb-hc-hZK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1060" y="16.350710900473931"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1zH-wF-JUv">
+            <objects>
+                <viewController id="wg2-VN-EEU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kle-bC-Xow">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnE-eT-BRI">
+                                <rect key="frame" x="125.00000000000001" y="99" width="140.33333333333337" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KE9-Im-kze">
+                                <rect key="frame" x="12" y="142" width="366" height="91"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Crypto List, um app que visualiza várias criptomoedas, respectivamente Nome, Sigla, Preço em Dólar e Real. Os dados são obtidos da API  CoinAPI.io. Pode ser acessado no site:</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://docs.coinapi.io/#endpoints" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SjL-eX-S74">
+                                <rect key="frame" x="12" y="238" width="366" height="32"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Csv-d3-hyO"/>
+                                </constraints>
+                                <color key="textColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a5m-Bf-lCo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SjL-eX-S74" firstAttribute="top" secondItem="KE9-Im-kze" secondAttribute="bottom" constant="5" id="1Av-sk-BM3"/>
+                            <constraint firstItem="a5m-Bf-lCo" firstAttribute="bottom" secondItem="SjL-eX-S74" secondAttribute="bottom" constant="540" id="Cx8-RY-8bK"/>
+                            <constraint firstItem="SjL-eX-S74" firstAttribute="leading" secondItem="a5m-Bf-lCo" secondAttribute="leading" constant="12" id="QXg-PX-2ML"/>
+                            <constraint firstItem="a5m-Bf-lCo" firstAttribute="trailing" secondItem="SnE-eT-BRI" secondAttribute="trailing" constant="124.66666666666663" id="UxW-l6-At9"/>
+                            <constraint firstItem="a5m-Bf-lCo" firstAttribute="trailing" secondItem="KE9-Im-kze" secondAttribute="trailing" constant="12" id="XDK-x1-OPa"/>
+                            <constraint firstItem="KE9-Im-kze" firstAttribute="top" secondItem="SnE-eT-BRI" secondAttribute="bottom" constant="14.333333333333329" id="ZAF-iR-8jM"/>
+                            <constraint firstItem="SnE-eT-BRI" firstAttribute="top" secondItem="a5m-Bf-lCo" secondAttribute="top" constant="11" id="aWr-S8-6o0"/>
+                            <constraint firstItem="a5m-Bf-lCo" firstAttribute="trailing" secondItem="SjL-eX-S74" secondAttribute="trailing" constant="12" id="m4u-It-E8u"/>
+                            <constraint firstItem="KE9-Im-kze" firstAttribute="leading" secondItem="a5m-Bf-lCo" secondAttribute="leading" constant="12" id="qm5-K7-rW0"/>
+                            <constraint firstItem="SnE-eT-BRI" firstAttribute="leading" secondItem="a5m-Bf-lCo" secondAttribute="leading" constant="125" id="yaU-fX-lj8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="lVX-2n-Yf6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMv-z3-eeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953.8461538461538" y="15.639810426540283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VQL-rp-MqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tFO-2S-4Ip" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="k87-dp-I1d">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CvX-6e-ZQT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tb-KV-sPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="16.350710900473931"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bitcoin" width="640" height="640"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
